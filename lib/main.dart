@@ -9,7 +9,9 @@ void main() {
   // https://api.flutter.dev/flutter/dart-core/String-class.html
   runApp(
     MaterialApp(
-      home: Scaffold(body: Text('$name $lastName is $color and $alignment')),
+      home: Scaffold(
+        body: Center(child: Text('$name $lastName is $color and $alignment')),
+      ),
     ),
   );
 }
