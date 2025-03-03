@@ -10,6 +10,7 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.blue,
         body: Center(child: Text('$name $lastName is $color and $alignment')),
       ),
     ),
