@@ -19,7 +19,10 @@ void main() {
             ),
           ),
           child: Center(
-            child: Text('$name $lastName is $color and $alignment'),
+            child: Text(
+              '$name $lastName is $color and $alignment',
+              style: TextStyle(color: Colors.white, fontSize: 28),
+            ),
           ),
         ),
       ),
