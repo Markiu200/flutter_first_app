@@ -14,6 +14,8 @@ void main() {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [Colors.deepPurple, Colors.purpleAccent],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
             ),
           ),
           child: Center(
