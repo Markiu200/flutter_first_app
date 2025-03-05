@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  // const added, as MaterialApp, Scaffold, and GradientContainer have
-  // const constructors.
   runApp(const MaterialApp(home: Scaffold(body: GradientContainer())));
 }
 
+class Customer {
+  final String name;
+  final int age;
+  final String location;
+
+  // constructor
+  const Customer(String n, int a, String l) : name = n, age = a, location = l;
+}
+
 class GradientContainer extends StatelessWidget {
-  // const keyword allows making instances of that class const.
-  // GradientContainer({super.key}) is a shortcut for below.
   const GradientContainer({key}) : super(key: key);
 
   @override
