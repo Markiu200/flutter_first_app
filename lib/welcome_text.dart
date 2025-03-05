@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 
 class WelcomeText extends StatelessWidget {
-  const WelcomeText({super.key});
+  const WelcomeText(this.text, {super.key});
+
+  final String text;
 
   @override
   Widget build(BuildContext context) {
-    return const Text(
-      'Smok Kasmok is white and evil',
-      style: TextStyle(color: Colors.white, fontSize: 28),
-    );
+    return Text(text, style: TextStyle(color: Colors.white, fontSize: 28));
   }
 }
