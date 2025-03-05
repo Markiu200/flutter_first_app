@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:first_app/welcome_text.dart';
 
 class GradientContainer extends StatelessWidget {
   const GradientContainer({super.key});
@@ -13,12 +14,7 @@ class GradientContainer extends StatelessWidget {
           end: Alignment.bottomCenter,
         ),
       ),
-      child: Center(
-        child: Text(
-          'Smok Kasmok is white and evil',
-          style: TextStyle(color: Colors.white, fontSize: 28),
-        ),
-      ),
+      child: Center(child: WelcomeText()),
     );
   }
 }
