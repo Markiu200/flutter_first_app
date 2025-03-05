@@ -25,9 +25,16 @@ class GradientContainer extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            WelcomeText('Smok Kasmok eats soup'),
+            const WelcomeText('Smok Kasmok eats soup'),
             Image.asset('assets/images/dice-1.png'),
-            TextButton(onPressed: () {}, child: const Text("Roll")),
+            TextButton(
+              onPressed: () {},
+              style: TextButton.styleFrom(
+                foregroundColor: Colors.white,
+                textStyle: TextStyle(fontSize: 28),
+              ),
+              child: const Text("Roll"),
+            ),
           ],
         ),
       ),
