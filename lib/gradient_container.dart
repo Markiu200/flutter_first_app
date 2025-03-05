@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:first_app/welcome_text.dart';
+import 'package:first_app/dice_roller.dart';
 
 class GradientContainer extends StatelessWidget {
   const GradientContainer({
@@ -24,18 +25,7 @@ class GradientContainer extends StatelessWidget {
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const WelcomeText('Smok Kasmok eats soup'),
-            Image.asset('assets/images/dice-1.png'),
-            TextButton(
-              onPressed: () {},
-              style: TextButton.styleFrom(
-                foregroundColor: Colors.white,
-                textStyle: TextStyle(fontSize: 28),
-              ),
-              child: const Text("Roll"),
-            ),
-          ],
+          children: [const WelcomeText('Smok Kasmok eats soup'), DiceRoller()],
         ),
       ),
     );
