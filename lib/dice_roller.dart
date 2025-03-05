@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 class DiceRoller extends StatefulWidget {
   // For now it's jump of faith - you split stateful widget into two classes.
@@ -19,8 +20,9 @@ class _DiceRollerState extends State<DiceRoller> {
 
   void rollTheDice() {
     // This is what calls for rebuild of a widget. Change it's state here.
+    int diceRoll = Random().nextInt(6) + 1;
     setState(() {
-      img = 'assets/images/dice-6.png';
+      img = 'assets/images/dice-$diceRoll.png';
     });
   }
 
