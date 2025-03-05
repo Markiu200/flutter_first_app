@@ -5,8 +5,7 @@ void main() {
   final String color = 'white';
   const lastName = 'Kasmok';
   final alignment = 'evil';
-  // https://api.flutter.dev/flutter/widgets/Text-class.html
-  // https://api.flutter.dev/flutter/dart-core/String-class.html
+
   runApp(
     MaterialApp(
       home: Scaffold(
