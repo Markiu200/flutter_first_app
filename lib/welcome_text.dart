@@ -5,7 +5,7 @@ class WelcomeText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
+    return const Text(
       'Smok Kasmok is white and evil',
       style: TextStyle(color: Colors.white, fontSize: 28),
     );
