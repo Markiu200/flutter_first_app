@@ -8,10 +8,11 @@ void main() {
 
 class GradientContainer extends StatelessWidget {
   // const keyword allows making instances of that class const.
-  const GradientContainer({super.key});
+  // GradientContainer({super.key}) is a shortcut for below.
+  const GradientContainer({key}) : super(key: key);
 
   @override
-  Widget build(BuildContext ContextAction) {
+  Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
