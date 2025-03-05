@@ -1,30 +1,26 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  const String name = 'smok';
-  final String color = 'white';
-  const lastName = 'Kasmok';
-  final alignment = 'evil';
+  runApp(MaterialApp(home: Scaffold(body: GradientContainer())));
+}
 
-  runApp(
-    MaterialApp(
-      home: Scaffold(
-        body: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [Colors.deepPurple, Colors.purpleAccent],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-          ),
-          child: Center(
-            child: Text(
-              '$name $lastName is $color and $alignment',
-              style: TextStyle(color: Colors.white, fontSize: 28),
-            ),
-          ),
+class GradientContainer extends StatelessWidget {
+  @override
+  Widget build(BuildContext ContextAction) {
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [Colors.deepPurple, Colors.purpleAccent],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
         ),
       ),
-    ),
-  );
+      child: Center(
+        child: Text(
+          'Smok Kasmok is white and evil',
+          style: TextStyle(color: Colors.white, fontSize: 28),
+        ),
+      ),
+    );
+  }
 }
