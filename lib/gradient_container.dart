@@ -21,7 +21,15 @@ class GradientContainer extends StatelessWidget {
           end: Alignment.bottomCenter,
         ),
       ),
-      child: Center(child: WelcomeText('Smok Kasmok eats soupings')),
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            WelcomeText('Smok Kasmok eats soup'),
+            Image.asset('assets/images/quake.jpg'),
+          ],
+        ),
+      ),
     );
   }
 }
